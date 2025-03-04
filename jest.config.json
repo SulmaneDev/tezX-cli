@@ -1,0 +1,11 @@
+{
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testMatch": [
+        "**/tests/**/*.test.ts",
+        "**/__tests__/**/*.[jt]s?(x)"
+    ],
+    "transform": {
+        "^.+\\.(js|jsx|ts|tsx)$": "babel-jest"
+    }
+}
