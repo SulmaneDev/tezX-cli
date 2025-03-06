@@ -5,6 +5,8 @@ on:
     branches:
       - main
       - "release/*"
+    tags:
+      - 'v*'  # Trigger for version tags (e.g., v1.0.0)
   pull_request:
     branches:
       - main
@@ -38,8 +40,9 @@ jobs:
 
       - name: Build the package
         run: npm run build
+
       - name: Publish to npm
         if: startsWith(github.ref, 'refs/tags/')  # Only run on tag push
-        run: npm publish
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
