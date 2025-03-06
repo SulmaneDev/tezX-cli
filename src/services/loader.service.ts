@@ -7,3 +7,4 @@ export default class LoaderService {
         new InfoCommand(new InfoAction()).load(cmd);
     }
 }
+
