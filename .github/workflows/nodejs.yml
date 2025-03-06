@@ -38,7 +38,7 @@ jobs:
 
       - name: Build the package
         run: npm run build
-- name: Publish to npm
+      - name: Publish to npm
         if: startsWith(github.ref, 'refs/tags/')  # Only run on tag push
         run: npm publish
         env:
