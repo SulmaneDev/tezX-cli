@@ -10,11 +10,21 @@
     "build": "npm run clean && swc src -d dist",
     "dev": "swc src -d dist --watch",
     "clean": "gulp clean",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint . --ext .ts,tsx,.js,.jsx"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "cli",
+    "tezx",
+    "applications",
+    "node"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SulmaneDev/tezX-cli.git"
+  },
+  "author": "Sulman Khan",
+  "license": "MIT",
   "description": "A cli for tezx applications.",
   "devDependencies": {
     "@eslint/js": "^9.21.0",
