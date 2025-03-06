@@ -7,7 +7,7 @@
     "tezx": "./dist/src/tezx.js"
   },
   "scripts": {
-    "build": "npm run clean && swc src -d dist",
+    "build": "swc src -d dist",
     "dev": "swc src -d dist --watch",
     "clean": "gulp clean",
     "test": "jest",
